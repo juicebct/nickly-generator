@@ -1,0 +1,34 @@
+{
+    "ENG": {
+        "maintitle": "ROLEPLAY <br> NICKNAME <br> GENERATOR",
+        "description-1": "Looking for the perfect RP Nickname for your character in <span>GTA SAMP</span> or <span>GTA 5 RP</span>? Our generator will help you create <span>a unique, stylish, and memorable name</span> that will be perfect <span>for any RolePlay server</span>.",
+        "description-2": "Customize the parameters to your preferences: <span>choose the gender and nationality of your character</span>, and then run the generation. You will get an <span>original nickname</span> that will emphasize the personality of your character and help you stand out in the game.",
+        "your-nickname": "YOUR NICKNAME",
+        "character-gender": "CHARACTER GENDER",
+        "character-nationality": "CHARACTER NATIONALITY",
+        "generate-button": "GENERATE",
+        "selected-nationality": "Select option",
+        "nationality-american": "American",
+        "nationality-russian": "Russian",
+        "nationality-japanese": "Japanese",
+        "nationality-italian": "Italian",
+        "nationality-spanish": "Spanish",
+        "nationality-german": "German"
+    },
+    "RUS": {
+        "maintitle": "ГЕНЕРАТОР <br> ROLEPLAY <br> НИКНЕЙМОВ",
+        "description-1": "Ищете идеальный RP никнейм для вашего персонажа в <span>GTA SAMP</span> или <span>GTA 5 RP</span>? Наш генератор поможет вам создать <span>уникальное, стильное и запоминающееся имя</span>, которое идеально подойдёт <span>для любого RP сервера</span>.",
+        "description-2": "Настройте параметры по своему вкусу: <span>выберите пол и национальность вашего персонажа</span>, затем запустите генерацию. Вы получите <span>оригинальный никнейм</span>, который подчеркнёт индивидуальность вашего персонажа и поможет выделиться в игре.",
+        "your-nickname": "ВАШ НИКНЕЙМ",
+        "character-gender": "ПОЛ ПЕРСОНАЖА",
+        "character-nationality": "НАЦИОНАЛЬНОСТЬ ПЕРСОНАЖА",
+        "generate-button": "СГЕНЕРИРОВАТЬ",
+        "selected-nationality": "Выбрать",
+        "nationality-american": "Американец",
+        "nationality-russian": "Русский",
+        "nationality-japanese": "Японец",
+        "nationality-italian": "Итальянец",
+        "nationality-spanish": "Испанец",
+        "nationality-german": "Немец"
+    }
+}

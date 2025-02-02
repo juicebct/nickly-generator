@@ -1,0 +1,55 @@
+{
+    "male": {
+        "american": {
+            "first_names": ["John", "Michael", "William", "James", "David", "Richard", "Joseph", "Charles", "Thomas", "Daniel", "Matthew", "Christopher", "George", "Robert", "Edward", "Brian", "Ronald", "Anthony", "Mark", "Steven"],
+            "last_names": ["Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez", "Hernandez", "Lopez", "Gonzalez", "Wilson", "Anderson", "Thomas", "Taylor", "Moore", "Jackson", "Martin"]
+        },
+        "russian": {
+            "first_names": ["Ivan", "Dmitriy", "Alexey", "Andrey", "Nikita", "Vladimir", "Nikolay", "Mikhail", "Pavel", "Yuri", "Oleg", "Anton", "Denis", "Igor", "Sergey", "Artem", "Roman", "Konstantin", "Viktor", "Maxim"],
+            "last_names": ["Ivanov", "Petrov", "Sidorov", "Smirnov", "Popov", "Kuznetsov", "Morozov", "Volkov", "Alexandrov", "Sokolov", "Lebedev", "Kozlov", "Novikov", "Pavlov", "Orlov", "Fedorov", "Kiselev", "Egorov", "Nikolaev", "Semyonov"]
+        },
+        "japanese": {
+            "first_names": ["Hiroshi", "Takeshi", "Yuki", "Kenta", "Ryo", "Daiki", "Sota", "Yuto", "Haruto", "Sora", "Ren", "Yuki", "Riku", "Shota", "Kaito", "Hayato", "Takumi", "Naoki", "Hikaru", "Sosuke"],
+            "last_names": ["Sato", "Suzuki", "Takahashi", "Tanaka", "Watanabe", "Ito", "Yamamoto", "Nakamura", "Kobayashi", "Kato", "Yoshida", "Yamada", "Sasaki", "Yamaguchi", "Matsumoto", "Inoue", "Kimura", "Shimizu", "Ueno", "Okada"]
+        },
+        "italian": {
+            "first_names": ["Giuseppe", "Luca", "Mario", "Matteo", "Alessandro", "Leonardo", "Riccardo", "Lorenzo", "Gabriele", "Giovanni", "Marco", "Antonio", "Simone", "Davide", "Federico", "Andrea", "Alberto", "Enrico", "Francesco", "Pietro"],
+            "last_names": ["Rossi", "Russo", "Ferrari", "Esposito", "Bianchi", "Romano", "Colombo", "Ricci", "Marino", "Greco", "Bruno", "Gallo", "Conti", "De Luca", "Mancini", "Costa", "Giordano", "Rizzo", "Lombardi", "Barbieri"]
+        },
+        "spanish": {
+            "first_names": ["Alejandro", "Javier", "Carlos", "Diego", "José", "Manuel", "Francisco", "Antonio", "Miguel", "Juan", "Luis", "Ángel", "Jorge", "Rafael", "Pedro", "Pablo", "Fernando", "Santiago", "Daniel", "Enrique"],
+            "last_names": ["García", "Martínez", "López", "Rodríguez", "González", "Hernández", "Sánchez", "Pérez", "Martín", "Gómez", "Ruiz", "Díaz", "Alonso", "Torres", "Romero", "Vázquez", "Serrano", "Ramos", "Suárez", "Ortega"]
+        },
+        "german": {
+            "first_names": ["Max", "Felix", "Lukas", "Jonas", "Paul", "Leon", "Liam", "Finn", "Louis", "Julian", "Tim", "Simon", "Fabian", "Alexander", "Matthias", "Tobias", "Nico", "Sebastian", "David", "Jan"],
+            "last_names": ["Schmidt", "Müller", "Schneider", "Fischer", "Weber", "Meyer", "Wagner", "Becker", "Schulz", "Hoffmann", "Schäfer", "Koch", "Bauer", "Richter", "Klein", "Wolf", "Schröder", "Neumann", "Schwarz", "Zimmermann"]
+        }
+    },
+    "female": {
+        "american": {
+            "first_names": ["Mary", "Jennifer", "Linda", "Elizabeth", "Patricia", "Barbara", "Susan", "Jessica", "Sarah", "Karen", "Nancy", "Lisa", "Betty", "Dorothy", "Helen", "Sandra", "Ashley", "Emily", "Michelle", "Kimberly"],
+            "last_names": ["Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez", "Hernandez", "Lopez", "Gonzalez", "Wilson", "Anderson", "Thomas", "Taylor", "Moore", "Jackson", "Martin"]
+        },
+        "russian": {
+            "first_names": ["Anna", "Olga", "Elena", "Natalia", "Svetlana", "Maria", "Tatiana", "Yulia", "Irina", "Ekaterina", "Marina", "Anastasia", "Victoria", "Larisa", "Yana", "Galina", "Ksenia", "Nina", "Daria", "Vera"],
+            "last_names": ["Ivanova", "Petrova", "Sidorova", "Smirnova", "Popova", "Kuznetsova", "Morozova", "Volkova", "Alexandrova", "Sokolova", "Lebedeva", "Kozlova", "Novikova", "Pavlova", "Orlova", "Fedorova", "Kiseleva", "Egorova", "Nikolaeva", "Semyonova"]
+        },
+        "japanese": {
+            "first_names": ["Aiko", "Yui", "Miyuki", "Sakura", "Hana", "Nana", "Yuka", "Haruka", "Misaki", "Rina", "Ayumi", "Rika", "Yuna", "Kana", "Miku", "Natsu", "Airi", "Kaede", "Hinata", "Suzu"],
+            "last_names": ["Sato", "Suzuki", "Takahashi", "Tanaka", "Watanabe", "Ito", "Yamamoto", "Nakamura", "Kobayashi", "Kato", "Yoshida", "Yamada", "Sasaki", "Yamaguchi", "Matsumoto", "Inoue", "Kimura", "Shimizu", "Ueno", "Okada"]
+        },
+        "italian": {
+            "first_names": ["Giulia", "Francesca", "Chiara", "Martina", "Sofia", "Elena", "Elisa", "Giorgia", "Alessia", "Sara", "Silvia", "Valentina", "Beatrice", "Roberta", "Alice", "Laura", "Greta", "Federica", "Ludovica", "Arianna"],
+            "last_names": ["Rossi", "Russo", "Ferrari", "Esposito", "Bianchi", "Romano", "Colombo", "Ricci", "Marino", "Greco", "Bruno", "Gallo", "Conti", "De Luca", "Mancini", "Costa", "Giordano", "Rizzo", "Lombardi", "Barbieri"]
+        },
+        "spanish": {
+            "first_names": ["María", "Sofía", "Lucía", "Isabella", "Valentina", "Camila", "Valeria", "Marta", "Paula", "Elena", "Ana", "Julia", "Emma", "Alicia", "Carmen", "Natalia", "Adriana", "Rosa", "Eva", "Clara"],
+            "last_names": ["García", "Martínez", "López", "Rodríguez", "González", "Hernández", "Sánchez", "Pérez", "Martín", "Gómez", "Ruiz", "Díaz", "Alonso", "Torres", "Romero", "Vázquez", "Serrano", "Ramos", "Suárez", "Ortega"]
+        },
+        "german": {
+            "first_names": ["Sophie", "Lena", "Emma", "Mia", "Hannah", "Anna", "Lea", "Lina", "Emilia", "Marie", "Amelie", "Charlotte", "Mila", "Johanna", "Laura", "Elena", "Emily", "Sarah", "Paula", "Maja"],
+            "last_names": ["Schmidt", "Müller", "Schneider", "Fischer", "Weber", "Meyer", "Wagner", "Becker", "Schulz", "Hoffmann", "Schäfer", "Koch", "Bauer", "Richter", "Klein", "Wolf", "Schröder", "Neumann", "Schwarz", "Zimmermann"]
+        }
+    }
+}
+

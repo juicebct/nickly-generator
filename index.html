@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nickly - RolePlay Nickname Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+    <body>
+        <div class="main-container">
+
+        <!-- Information container -->
+            <div class="left-container">
+                <header class="header">
+                    <div class="container">
+
+                        <!-- Logo -->
+                        <h1 class="logo">
+                            <img src="images/Logo.svg" alt="Nickly Logo">
+                        </h1>
+
+                        <!-- Navigation menu -->
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="https://github.com/juicebucket/nickly-generator">GITHUB</a></li>
+
+                                <!-- Language selection -->
+                                <div class="language-selector dropdown">
+                                    <button class="lang-btn" onclick="toggleDropdown('.language-selector')">
+                                        <img src="icons/Globe.svg" alt="Language"> <span id="selected-lang">ENG</span> ▼
+                                    </button>
+                                    <ul class="lang-dropdown">
+                                        <li onclick="changeSelection('.language-selector', 'selected-lang', 'ENG')">ENG</li>
+                                        <li onclick="changeSelection('.language-selector', 'selected-lang', 'RUS')">RUS</li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>            
+
+                <div class="information">
+                    <h1 lang="maintitle">ROLEPLAY <br> NICKNAME <br> GENERATOR</h1>
+                    <p lang="description-1">Looking for the perfect RP Nickname for your character in <span>GTA SAMP</span> or <span>GTA 5 RP</span>? Our generator will help you create <span>a unique, stylish, and memorable name</span> that will be perfect <span>for any RolePlay server</span>.</p>
+                    <p lang="description-2">Customize the parameters to your preferences: <span>choose the gender and nationality of your character</span>, and then run the generation. You will get an <span>original nickname</span> that will emphasize the personality of your character and help you stand out in the game.</p>
+                </div>
+
+            </div>
+
+            <!-- Generator container -->
+            <div class="right-container">
+                <div class="generator-container">
+
+                    <!-- Nickname box -->
+                    <h2 lang="your-nickname">YOUR NICKNAME</h2>
+                    <div class="nickname-box" onclick="copyNickname()">
+                        <img src="icons/person-icon.svg" alt="Person Icon">
+                        <input type="text" id="nickname" value="IVAN_IVANOV" readonly>
+                    </div>                    
+                    
+                    <!-- Character gender selection -->
+                    <h2 lang="character-gender">CHARACTER GENDER</h2>
+                    <div class="gender-selection">
+                        <input type="radio" id="male" name="gender" class="gender-input" hidden>
+                        <label for="male" class="gender-card male"></label>
+                    
+                        <input type="radio" id="female" name="gender" class="gender-input" hidden>
+                        <label for="female" class="gender-card female"></label>
+                    </div>
+                    
+                    <!-- Character nationality selection -->
+                    <h2 lang="character-nationality">CHARACTER NATIONALITY</h2>
+                    <div class="nationality-selector dropdown">
+                        <button class="nationality-btn" onclick="toggleDropdown('.nationality-selector')">
+                            <span lang="selected-nationality" id="selected-nationality">Select option</span> ▼
+                        </button>
+                        <ul class="nationality-dropdown">
+                            <li lang="nationality-american" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'American')">American</li>
+                            <li lang="nationality-russian" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'Russian')">Russian</li>
+                            <li lang="nationality-japanese" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'Japanese')">Japanese</li>
+                            <li lang="nationality-italian" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'Italian')">Italian</li>
+                            <li lang="nationality-spanish" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'Spanish')">Spanish</li>
+                            <li lang="nationality-german" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'German')">German</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Nickname generate button -->
+                    <button lang="generate-button" class="generate-button" onclick="generateNickname()">GENERATE</button>
+                    
+                    <!-- Copyright -->
+                    <p class="copyright">MADE WITH ❤️ BY <a href="https://github.com/juicebucket" class="copyright-link">NIKITA ANDREEV</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="addons.js"></script>
+        <script src="translation.js"></script>
+        <script src="generator.js"></script>
+        
+    </body>
+</html>
