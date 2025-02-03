@@ -5,7 +5,7 @@
 // Loading data from the file names.json
 let namesData = {};
 
-fetch("names.json")
+fetch("js/json/names.json")
     .then(response => response.json())
     .then(data => namesData = data)
     .catch(error => console.error("ERROR: Data loading error:", error));
