@@ -7,7 +7,7 @@ let currentLanguage = localStorage.getItem("selectedLanguage") || "ENG";
 // Loading data from the file lang.json
 let translations = {};
 
-fetch("lang.json")
+fetch("js/json/lang.json")
     .then(response => response.json())
     .then(data => {
         translations = data;
