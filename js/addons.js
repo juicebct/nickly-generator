@@ -28,3 +28,36 @@ function changeSelection(selector, targetId, value) {
     document.getElementById(targetId).textContent = value;
     document.querySelector(selector).classList.remove("active");
 }
+
+// Dark Theme (range input)
+document.addEventListener("DOMContentLoaded", () => {
+    const rangeInput = document.getElementById("theme-range");
+    const rootElement = document.documentElement;
+
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        rootElement.classList.add("dark-theme");
+        rangeInput.value = "1";
+    } else {
+        rootElement.classList.remove("dark-theme");
+        rangeInput.value = "0";
+    }
+
+    rangeInput.addEventListener("input", () => {
+        if (rangeInput.value === "1") {
+            rootElement.classList.add("dark-theme");
+            localStorage.setItem("theme", "dark");
+        } else {
+            rootElement.classList.remove("dark-theme");
+            localStorage.setItem("theme", "light");
+        }
+    });
+});
+
+/* Mobile menu */
+const menuToggle = document.querySelector(".nav-toggle");
+const navElements = document.querySelector(".nav");
+
+menuToggle.onclick = function () {
+    navElements.classList.toggle("active");
+};

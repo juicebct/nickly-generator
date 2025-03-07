@@ -24,22 +24,28 @@
                 <!-- Navigation menu -->
                 <header>
                         <!-- Logo -->
-                        <div class="logo" id="logo-light"></div>
+                        <div class="logo"></div>
+
+                        <!-- Mobile menu -->
+                        <button class="nav-toggle">&#9776;</button>
 
                         <!-- Navigation elements -->
                         <nav class="nav">
+
                             <ul>
                                 <!-- Link to GitHub -->
                                 <li><a href="https://github.com/juicebucket/nickly-generator">GITHUB</a></li>
 
+                                <input type="range" id="theme-range" min="0" max="1" step="1" value="0">
+
                                 <!-- Language selection -->
-                                <div class="language-selector dropdown">
-                                    <button class="lang-btn" onclick="toggleDropdown('.language-selector')">
-                                        <img src="icons/globe-icon.svg" alt="Language"> <span id="selected-lang">ENG</span> ▼
+                                <div class="lang-selector dropdown">
+                                    <button class="lang-btn" onclick="toggleDropdown('.lang-selector')">
+                                        <img src="icons/globe-icon.svg" alt="Language"> <span id="selected-lang">ENG</span> &#9207;
                                     </button>
                                     <ul class="lang-dropdown">
-                                        <li onclick="changeSelection('.language-selector', 'selected-lang', 'ENG')">ENG</li>
-                                        <li onclick="changeSelection('.language-selector', 'selected-lang', 'RUS')">RUS</li>
+                                        <li onclick="changeSelection('.lang-selector', 'selected-lang', 'ENG')">ENG</li>
+                                        <li onclick="changeSelection('.lang-selector', 'selected-lang', 'RUS')">RUS</li>
                                     </ul>
                                 </div>
                             </ul>
@@ -48,8 +54,8 @@
 
                 <div class="information">
                     <h1 lang="maintitle">ROLEPLAY <br> NICKNAME <br> GENERATOR</h1>
-                    <p lang="description">Looking for the perfect RP Nickname for your character in <span>GTA SAMP</span> or <span>GTA 5 RP</span>? Our generator will help you create <span>a unique, stylish, and memorable name</span> that will be perfect <span>for any RolePlay server</span>.</p>
-                    <p lang="description">Customize the parameters to your preferences: <span>choose the gender and nationality of your character</span>, and then run the generation. You will get an <span>original nickname</span> that will emphasize the personality of your character and help you stand out in the game.</p>
+                    <p lang="description-1">Looking for the perfect RP Nickname for your character in <span>GTA SAMP</span> or <span>GTA 5 RP</span>? Our generator will help you create <span>a unique, stylish, and memorable name</span> that will be perfect <span>for any RolePlay server</span>.</p>
+                    <p lang="description-2">Customize the parameters to your preferences: <span>choose the gender and nationality of your character</span>, and then run the generation. You will get an <span>original nickname</span> that will emphasize the personality of your character and help you stand out in the game.</p>
                 </div>
 
             </div>
@@ -92,10 +98,10 @@
                     </div>
                     
                     <!-- Nickname generate button -->
-                    <button lang="generate-button" class="generate-button" onclick="generateNickname()">GENERATE</button>
+                    <button lang="generate-btn" class="generate-btn" onclick="generateNickname()">GENERATE</button>
                     
                     <!-- Copyright -->
-                    <p class="copyright">MADE WITH ❤️ BY <a href="https://github.com/juicebucket">NIKITA ANDREEV</a></p>
+                    <p class="copyright">CREATED & DESIGNED BY <a href="https://juicebct.github.io/juicebct/">JUICEBCT</a> WITH ❤️ </p>
                 </div>
             </div>
         </div>

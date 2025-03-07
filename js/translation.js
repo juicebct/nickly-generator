@@ -1,5 +1,5 @@
 //
-// Language change (ENG, RUS)
+// Language change
 //
 
 let currentLanguage = localStorage.getItem("selectedLanguage") || "ENG";
