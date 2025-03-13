@@ -40,7 +40,7 @@ body {
 }
 
 .dark-theme .right-container {
-    background: url('images/background-dark.png') no-repeat center;
+    background: url('images/background-dark.webp') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -75,7 +75,7 @@ body {
     border-radius: 20px;
     text-align: center;
     align-items: center;
-    background: url('images/background.png') no-repeat center;
+    background: url('images/background.webp') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     color: var(--light-color);
@@ -201,14 +201,15 @@ input[type="range"]::-webkit-slider-thumb {
     opacity: 1;
     display: block;
     transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .lang-dropdown, .nationality-dropdown {
     position: absolute;
-    width: 96%;
+    width: 100%;
     border-radius: 5px;
     list-style: none;
-    padding: 10px;
+    padding: 5px 0;
     z-index: 1000;
     margin: 5px 0;
     display: none;
@@ -216,6 +217,7 @@ input[type="range"]::-webkit-slider-thumb {
     opacity: 0;
     transform: translateY(-10px);
     background: var(--white-color);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .lang-btn, .nationality-btn {
@@ -333,11 +335,11 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .male {
-    background-image: url('images/male-icon.svg');
+    background-image: url('icons/male-icon.svg');
 }
 
 .female {
-    background-image: url('images/female-icon.svg');
+    background-image: url('icons/female-icon.svg');
 }
 
 .gender-input:checked + .gender-card::after {
@@ -478,10 +480,10 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     .male {
-        background-image: url('images/male-icon-mobile.svg');
+        background-image: url('icons/male-icon-mobile.svg');
     }
 
     .female {
-        background-image: url('images/female-icon-mobile.svg');
+        background-image: url('icons/female-icon-mobile.svg');
     }
 }

@@ -32,7 +32,7 @@ function generateNickname() {
 
     // Checking for availability of data for selected parameters (does the file names.json contain similar parameters and data for them)
     if (!firstNames || !lastNames) {
-        alert("ERROR: No data for such parameters.");
+        alert("ERROR: No data for such parameters. Please use all parameters!");
         return;
     }
 

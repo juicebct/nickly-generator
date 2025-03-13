@@ -7,7 +7,7 @@ function copyNickname() {
     const nicknameField = document.getElementById("nickname");
     nicknameField.select();
     document.execCommand("copy");
-    alert("Nickname copied: " + nicknameField.value);
+    alert("🎉 Nickname copied: " + nicknameField.value);
 }
 
 

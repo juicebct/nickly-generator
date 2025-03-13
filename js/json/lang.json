@@ -30,5 +30,37 @@
         "nationality-italian": "Итальянец",
         "nationality-spanish": "Испанец",
         "nationality-german": "Немец"
+    },
+    "POR": {
+        "maintitle": "GERADOR DE <br> NICKNAME <br> ROLEPLAY",
+        "description-1": "Procurando o nickname RP perfeito para seu personagem em <span>GTA SAMP</span> ou <span>GTA 5 RP</span>? Nosso gerador ajudará você a criar <span>um nome único, estiloso e memorável</span>, perfeito <span>para qualquer servidor de RolePlay</span>.",
+        "description-2": "Personalize os parâmetros de acordo com suas preferências: <span>escolha o gênero e a nacionalidade do seu personagem</span> e, em seguida, inicie a geração. Você obterá <span>um nickname original</span> que destacará a personalidade do seu personagem e ajudará você a se destacar no jogo.",
+        "your-nickname": "SEU NICKNAME",
+        "character-gender": "GÊNERO DO PERSONAGEM",
+        "character-nationality": "NACIONALIDADE DO PERSONAGEM",
+        "generate-button": "GERAR",
+        "selected-nationality": "Selecionar opção",
+        "nationality-american": "Americano",
+        "nationality-russian": "Russo",
+        "nationality-japanese": "Japonês",
+        "nationality-italian": "Italiano",
+        "nationality-spanish": "Espanhol",
+        "nationality-german": "Alemão"
+    },
+    "ESP": {
+        "maintitle": "GENERADOR DE <br> NICKNAMES <br> ROLEPLAY",
+        "description-1": "¿Buscas el nickname RP perfecto para tu personaje en <span>GTA SAMP</span> o <span>GTA 5 RP</span>? Nuestro generador te ayudará a crear <span>un nombre único, estiloso y memorable</span>, perfecto <span>para cualquier servidor de RolePlay</span>.",
+        "description-2": "Personaliza los parámetros según tus preferencias: <span>elige el género y la nacionalidad de tu personaje</span> y luego genera el nombre. Obtendrás <span>un nickname original</span> que resaltará la personalidad de tu personaje y te ayudará a destacar en el juego.",
+        "your-nickname": "TU NICKNAME",
+        "character-gender": "GÉNERO DEL PERSONAJE",
+        "character-nationality": "NACIONALIDAD DEL PERSONAJE",
+        "generate-button": "GENERAR",
+        "selected-nationality": "Seleccionar opción",
+        "nationality-american": "Americano",
+        "nationality-russian": "Ruso",
+        "nationality-japanese": "Japonés",
+        "nationality-italian": "Italiano",
+        "nationality-spanish": "Español",
+        "nationality-german": "Alemán"
     }
 }

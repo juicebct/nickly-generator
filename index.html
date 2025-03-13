@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nickly - RolePlay Nickname Generator</title>
+    <title>NickLy - RolePlay Nickname Generator</title>
     <meta name="description" content="RolePlay Nickname Generator for GTA - SAMP, CRMP, GTA 5, GTA ONLINE, Garry's Mod...">
 
+    <!-- Styles and icons -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icon-css/css/flag-icons.min.css">
     <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    
 </head>
     <body>
         <div class="main-container">
@@ -44,8 +46,10 @@
                                         <img src="icons/globe-icon.svg" alt="Language"> <span id="selected-lang">ENG</span> &#9207;
                                     </button>
                                     <ul class="lang-dropdown">
-                                        <li onclick="changeSelection('.lang-selector', 'selected-lang', 'ENG')">ENG</li>
-                                        <li onclick="changeSelection('.lang-selector', 'selected-lang', 'RUS')">RUS</li>
+                                        <li onclick="changeSelection('.lang-selector', 'selected-lang', 'ENG')"><span class="flag-icon flag-icon-gb"></span> ENG</li>
+                                        <li onclick="changeSelection('.lang-selector', 'selected-lang', 'RUS')"><span class="flag-icon flag-icon-ru"></span> RUS</li>
+                                        <li onclick="changeSelection('.lang-selector', 'selected-lang', 'POR')"><span class="flag-icon flag-icon-pt"></span> POR</li>
+                                        <li onclick="changeSelection('.lang-selector', 'selected-lang', 'ESP')"><span class="flag-icon flag-icon-es"></span> ESP</li>
                                     </ul>
                                 </div>
                             </ul>
@@ -110,6 +114,6 @@
         <script src="js/generator.js"></script>
         <script src="js/addons.js"></script>
         <script src="js/translation.js"></script>
-        
+
     </body>
 </html>

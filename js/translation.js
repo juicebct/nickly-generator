@@ -38,7 +38,7 @@ function changeSelection(selector, targetId, value) {
     document.getElementById(targetId).textContent = value;
     document.querySelector(selector).classList.remove("active");
 
-    if (value === "ENG" || value === "RUS") {
+    if (value === "ENG" || value === "RUS" || value === "POR" || value === "ESP") {
         currentLanguage = value;
         localStorage.setItem("selectedLanguage", currentLanguage);
         applyTranslations();
