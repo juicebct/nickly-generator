@@ -2,11 +2,10 @@
 // Language change
 //
 
+// Data
 let currentLanguage = localStorage.getItem("selectedLanguage") || "ENG";
 
-// Loading data from the file lang.json
 let translations = {};
-
 fetch("js/json/lang.json")
     .then(response => response.json())
     .then(data => {

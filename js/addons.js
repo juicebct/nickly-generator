@@ -1,5 +1,5 @@
 //
-// Some addtional features for website like: copying nicknames to clipboard, dropdown lists logic.
+// Some addtional features for website.
 //
 
 // Function to copy nickname
@@ -29,30 +29,37 @@ function changeSelection(selector, targetId, value) {
     document.querySelector(selector).classList.remove("active");
 }
 
-// Dark Theme (range input)
+// Dark Theme toggle
 document.addEventListener("DOMContentLoaded", () => {
-    const rangeInput = document.getElementById("theme-range");
+    const themeButton = document.getElementById("theme-button");
     const rootElement = document.documentElement;
+    
+    // Icons for light and dark themes
+    const moonIcon = "<img src='icons/moon-icon.svg' alt='Dark Mode'/>";
+    const sunIcon = "<img src='icons/sun-icon.svg' alt='Light Mode'/>";
 
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") {
         rootElement.classList.add("dark-theme");
-        rangeInput.value = "1";
+        themeButton.innerHTML = sunIcon;
     } else {
         rootElement.classList.remove("dark-theme");
-        rangeInput.value = "0";
+        themeButton.innerHTML = moonIcon;
     }
 
-    rangeInput.addEventListener("input", () => {
-        if (rangeInput.value === "1") {
-            rootElement.classList.add("dark-theme");
-            localStorage.setItem("theme", "dark");
-        } else {
+    themeButton.addEventListener("click", () => {
+        if (rootElement.classList.contains("dark-theme")) {
             rootElement.classList.remove("dark-theme");
             localStorage.setItem("theme", "light");
+            themeButton.innerHTML = moonIcon;
+        } else {
+            rootElement.classList.add("dark-theme");
+            localStorage.setItem("theme", "dark");
+            themeButton.innerHTML = sunIcon;
         }
     });
 });
+
 
 /* Mobile menu */
 const menuToggle = document.querySelector(".nav-toggle");
