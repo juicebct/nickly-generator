@@ -36,29 +36,3 @@
     <a href="https://www.figma.com/design/1csNmOCC9NujtOgbEHjNxq/%F0%9F%92%BB-Website-Design-%2F-Nickly---Online-RolePlay-nickname-generator?node-id=93-1348&t=4gvePGcdPhLX8V2s-1">
       <img alt="Static Badge" src="https://img.shields.io/badge/Explore_the_project_in_Figma_(clickable)-242529?style=for-the-badge&logo=FIGMA">
     </a>
-
-## 📥 Future plans
-
-I will continue to maintain and develop the project, improving its functionality and performance. The focus will be not only on fixes, but also on implementing new features. At this moment the following updates are planned:
-
-- **Major Updates:**
-
-  - **✅ (Implemented in v1.1.0)** ~~Adding a dark theme for the website with the ability to switch between light and dark themes.~~
-
-  - Refactoring the website using modern technologies such as **TypeScript**, **React.js**, and **Tailwind CSS**.
-
-- **Regular Updates:**
-
-  - Adding more languages for translation.
-
-  - Adding more first and last names to generate.
-
-  - Adding more nationalities for selection.
-
-<br>
-
-
-  *📝 The list will be added and updated.*
-
-
-  *📮 You can suggest your idea for new updates in **Discussions**.*
