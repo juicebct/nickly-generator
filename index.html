@@ -39,28 +39,30 @@
                                 <li><a href="https://github.com/juicebucket/nickly-generator" target="_blank" rel="noopener noreferrer">GITHUB</a></li>
 
                                 <!-- Theme toggle -->
-                                <button id="theme-button" class="btn theme">Dark Mode</button>
+                                <li><button id="theme-button" class="btn theme">Dark Mode</button></li>
 
                                 <!-- Language selection -->
-                                <div class="lang-selector dropdown">
-                                    <button class="lang-btn" onclick="toggleDropdown('.lang-selector')">
-                                        <img src="icons/globe-icon.svg" alt="Language"> <span id="selected-lang">ENG</span> &#9207;
-                                    </button>
-                                    <ul class="lang-dropdown">
-                                        <li onclick="changeSelection('.lang-selector', 'selected-lang', 'ENG')"><span class="flag-icon flag-icon-gb"></span> ENG</li>
-                                        <li onclick="changeSelection('.lang-selector', 'selected-lang', 'RUS')"><span class="flag-icon flag-icon-ru"></span> RUS</li>
-                                        <li onclick="changeSelection('.lang-selector', 'selected-lang', 'POR')"><span class="flag-icon flag-icon-pt"></span> POR</li>
-                                        <li onclick="changeSelection('.lang-selector', 'selected-lang', 'ESP')"><span class="flag-icon flag-icon-es"></span> ESP</li>
-                                    </ul>
-                                </div>
+                                <li>
+                                    <div class="lang-selector dropdown">
+                                        <button class="lang-btn" onclick="toggleDropdown('.lang-selector')">
+                                            <img src="icons/globe-icon.svg" alt="Language"> <span id="selected-lang">ENG</span> &#9207;
+                                        </button>
+                                        <ul class="lang-dropdown">
+                                            <li onclick="changeSelection('.lang-selector', 'selected-lang', 'ENG')"><span class="flag-icon flag-icon-gb"></span> ENG</li>
+                                            <li onclick="changeSelection('.lang-selector', 'selected-lang', 'RUS')"><span class="flag-icon flag-icon-ru"></span> RUS</li>
+                                            <li onclick="changeSelection('.lang-selector', 'selected-lang', 'POR')"><span class="flag-icon flag-icon-pt"></span> POR</li>
+                                            <li onclick="changeSelection('.lang-selector', 'selected-lang', 'ESP')"><span class="flag-icon flag-icon-es"></span> ESP</li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
                         </nav>
                 </header>            
 
                 <div class="information">
-                    <h1 lang="maintitle">ROLEPLAY <br> NICKNAME <br> GENERATOR</h1>
-                    <p lang="description-1">Looking for the perfect RP Nickname for your character in <span>GTA SAMP</span> or <span>GTA 5 RP</span>? Our generator will help you create <span>a unique, stylish, and memorable name</span> that will be perfect <span>for any RolePlay server</span>.</p>
-                    <p lang="description-2">Customize the parameters to your preferences: <span>choose the gender and nationality of your character</span>, and then run the generation. You will get an <span>original nickname</span> that will emphasize the personality of your character and help you stand out in the game.</p>
+                    <h1 data-i18n="maintitle">ROLEPLAY <br> NICKNAME <br> GENERATOR</h1>
+                    <p data-i18n="description-1">Looking for the perfect RP Nickname for your character in <span>GTA SAMP</span> or <span>GTA 5 RP</span>? Our generator will help you create <span>a unique, stylish, and memorable name</span> that will be perfect <span>for any RolePlay server</span>.</p>
+                    <p data-i18n="description-2">Customize the parameters to your preferences: <span>choose the gender and nationality of your character</span>, and then run the generation. You will get an <span>original nickname</span> that will emphasize the personality of your character and help you stand out in the game.</p>
                 </div>
 
             </div>
@@ -70,14 +72,14 @@
                 <div class="generator-container">
 
                     <!-- Nickname box -->
-                    <h2 lang="your-nickname">YOUR NICKNAME</h2>
+                    <h2 data-i18n="your-nickname">YOUR NICKNAME</h2>
                     <div class="nickname-box" onclick="copyNickname()">
                         <img src="icons/person-icon.svg" alt="Person Icon">
                         <input type="text" id="nickname" value="IVAN_IVANOV" readonly>
                     </div>                    
                     
                     <!-- Character gender selection -->
-                    <h2 lang="character-gender">CHARACTER GENDER</h2>
+                    <h2 data-i18n="character-gender">CHARACTER GENDER</h2>
                     <div class="gender-selection">
                         <input type="radio" id="male" name="gender" class="gender-input" hidden>
                         <label for="male" class="gender-card male"></label>
@@ -87,26 +89,26 @@
                     </div>
                     
                     <!-- Character nationality selection -->
-                    <h2 lang="character-nationality">CHARACTER NATIONALITY</h2>
+                    <h2 data-i18n="character-nationality">CHARACTER NATIONALITY</h2>
                     <div class="nationality-selector dropdown">
                         <button class="nationality-btn" onclick="toggleDropdown('.nationality-selector')">
-                            <span lang="selected-nationality" id="selected-nationality">Select option</span> ▼
+                            <span data-i18n="selected-nationality" id="selected-nationality">Select option</span> ▼
                         </button>
                         <ul class="nationality-dropdown">
-                            <li lang="nationality-american" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'American')">American</li>
-                            <li lang="nationality-russian" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'Russian')">Russian</li>
-                            <li lang="nationality-japanese" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'Japanese')">Japanese</li>
-                            <li lang="nationality-italian" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'Italian')">Italian</li>
-                            <li lang="nationality-spanish" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'Spanish')">Spanish</li>
-                            <li lang="nationality-german" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'German')">German</li>
+                            <li data-i18n="nationality-american" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'American')">American</li>
+                            <li data-i18n="nationality-russian" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'Russian')">Russian</li>
+                            <li data-i18n="nationality-japanese" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'Japanese')">Japanese</li>
+                            <li data-i18n="nationality-italian" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'Italian')">Italian</li>
+                            <li data-i18n="nationality-spanish" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'Spanish')">Spanish</li>
+                            <li data-i18n="nationality-german" onclick="changeSelection('.nationality-selector', 'selected-nationality', 'German')">German</li>
                         </ul>
                     </div>
                     
                     <!-- Nickname generate button -->
-                    <button lang="generate-btn" class="generate-btn" onclick="generateNickname()">Generate</button>
+                    <button data-i18n="generate-button" class="generate-btn" onclick="generateNickname()">Generate</button>
                     
                     <!-- Copyright -->
-                    <p class="copyright">CREATED & DESIGNED BY <a href="https://juicebct.dev/" target="_blank" rel="noopener noreferrer">JUICEBCT</a> WITH ❤️ </p>
+                    <p class="copyright">CREATED &amp; DESIGNED BY <a href="https://juicebct.dev/" target="_blank" rel="noopener noreferrer">JUICEBCT</a> WITH ❤️ </p>
                 </div>
             </div>
         </div>

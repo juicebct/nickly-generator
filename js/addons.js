@@ -5,9 +5,18 @@
 // Function to copy nickname
 function copyNickname() {
     const nicknameField = document.getElementById("nickname");
+    const message = "🎉 Nickname copied: " + nicknameField.value;
+
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(nicknameField.value)
+            .then(() => alert(message))
+            .catch(error => console.error("ERROR: Copy error:", error));
+        return;
+    }
+
     nicknameField.select();
     document.execCommand("copy");
-    alert("🎉 Nickname copied: " + nicknameField.value);
+    alert(message);
 }
 
 
@@ -23,11 +32,6 @@ document.addEventListener("click", function (event) {
         }
     });
 });
-
-function changeSelection(selector, targetId, value) {
-    document.getElementById(targetId).textContent = value;
-    document.querySelector(selector).classList.remove("active");
-}
 
 // Dark Theme toggle
 document.addEventListener("DOMContentLoaded", () => {

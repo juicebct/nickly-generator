@@ -5,6 +5,7 @@
 
 // Data
 let namesData = {};
+let selectedNationality = "";
 
 fetch("js/json/names.json")
     .then(response => response.json())
@@ -14,13 +15,13 @@ fetch("js/json/names.json")
 // Generation
 function generateNickname() {
     const gender = document.querySelector("input[name='gender']:checked")?.id;
-    const nationality = document.getElementById("selected-nationality").textContent.toLowerCase();
+    const nationality = selectedNationality;
 
     if (!gender) {
         alert("ERROR: Please select the character's gender.");
         return;
     }
-    if (nationality === "select option") {
+    if (!nationality) {
         alert("ERROR: Please select the character's nationality.");
         return;
     }
@@ -36,5 +37,10 @@ function generateNickname() {
     const randomFirstName = firstNames[Math.floor(Math.random() * firstNames.length)];
     const randomLastName = lastNames[Math.floor(Math.random() * lastNames.length)];
 
-    document.getElementById("nickname").value = `${randomFirstName}_${randomLastName}`;
+    const nickname = `${randomFirstName}_${randomLastName}`
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/\s+/g, "");
+
+    document.getElementById("nickname").value = nickname;
 }
